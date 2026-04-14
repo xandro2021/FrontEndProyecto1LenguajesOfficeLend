@@ -1,0 +1,20 @@
+{
+  "name": "Frontend_OfficeLend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.98.0",
+    "sharp": "^0.34.5",
+    "vite": "^8.0.0"
+  }
+}

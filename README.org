@@ -1,0 +1,14 @@
+#+title: Proyecto01 FrontEnd Lenguajes OfficeLend
+
+* Instalar npm o pnpm
+Debes hacer una indacion rapida para como instalarlo en tu sistema operativo para asi poder ejecutar el proyecto
+
+
+* Ejecucion
+Habres la terminal con vscode y ejecutas los siguientes comandos, una ves ejecutados te saldra un output diciendo
+que el servidor esta corriendo en localhost:5173 o cualquier otro puerto, entonces abres esa ruta desde el navegador
+no debes detener la ejecucion mientras estas usandolo desde el navegador
+#+begin_src bash
+npm install
+npm run dev
+#+end_src
