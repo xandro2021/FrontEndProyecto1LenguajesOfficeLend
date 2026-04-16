@@ -1,0 +1,236 @@
+:root {
+    --primary: #00236f;
+    --primary-container: #1e3a8a;
+    --on-primary: #ffffff;
+
+    --secondary-container: #F59E0B;
+
+    --surface: #f7f9fb;
+    --surface-container: #eceef0;
+    --surface-container-high: #e6e8ea;
+    --surface-container-highest: #e0e3e5;
+
+    --on-surface: #191c1e;
+    --on-surface-variant: #444651;
+
+    --outline: #757682;
+    --outline-variant: #c5c5d3;
+
+    --error: #ba1a1a;
+}
+
+.font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+.rounded-2xl { border-radius: 1rem; }
+.rounded-xl { border-radius: 0.75rem; }
+
+.shadow-sm { box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.shadow-md { box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+
+.border-soft {
+    border: 2px solid rgba(197,197,211,0.3);
+}
+
+.input-custom {
+    border: 2px solid rgba(197,197,211,0.3);
+    padding: 1rem 1.5rem 1rem 3.5rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-custom:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(0,35,111,0.1);
+}
+
+.btn-filter {
+    background: var(--surface-container-high);
+    color: var(--primary);
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.btn-filter:hover {
+    background: var(--surface-container-highest);
+}
+
+.btn-primary-custom {
+    background: var(--primary);
+    color: var(--on-primary);
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.btn-primary-custom:hover {
+    background: #001a5a;
+}
+
+.label-custom {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--outline);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.bg-surface-container-low {
+    background-color: var(--surface-container-low);
+}
+
+.font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #00236f 0%, #1e3a8a 100%);
+}
+
+.ghost-border {
+    border: 1px solid rgba(197, 197, 211, 0.3);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.card-custom {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(197,197,211,0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-custom:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Imagen */
+.card-img-wrapper {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* transform: scale(0.9); */
+    transition: transform 0.5s ease;
+}
+
+.card-custom:hover .card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Badge */
+.badge-custom {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+/* Colores */
+.badge-disponible { background: #d1fae5; color: #065f46; }
+.badge-solicitud { background: #fef3c7; color: #92400e; }
+.badge-mantenimiento { background: #e2e8f0; color: #334155; }
+.badge-propio { background: #dbeafe; color: #1e40af; }
+
+/* Card body */
+.card-body-custom {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-code {
+    font-size: 10px;
+    background: #f2f4f6;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #757682;
+}
+
+/* Botones */
+.btn-card {
+    width: 100%;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-card:hover {
+    filter: brightness(1.05);
+}
+
+.btn-disabled {
+    background: #eceef0;
+    color: #757682;
+    cursor: not-allowed;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.btn-primary-custom:hover {
+    background-color: #001a5a;
+    border-color: #001a5a;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 2px solid #F59E0B;
+    font-weight: 700;
+}
+
+.badge-disponible { background-color: #d1fae5; color: #065f46; }
+.badge-solicitud { background-color: #fef3c7; color: #92400e; }
+.badge-mantenimiento { background-color: #e2e8f0; color: #334155; }
