@@ -1,0 +1,133 @@
+:root {
+    /* Colores extraídos del tema Tailwind original */
+    --surface: #f7f9fb;
+    --on-surface: #191c1e;
+    --on-surface-variant: #444651;
+    --primary: #00236f;
+    --on-primary: #ffffff;
+    --primary-container: #1e3a8a;
+    --on-primary-container: #90a8ff;
+    --primary-fixed: #dce1ff;
+    --secondary: #855300;
+    --secondary-container: #fea619;
+    --on-secondary: #ffffff;
+    --error: #ba1a1a;
+    --error-container: #ffdad6;
+    --on-error-container: #93000a;
+    --surface-container-low: #f2f4f6;
+    --surface-container: #eceef0;
+    --surface-container-high: #e6e8ea;
+    --surface-container-lowest: #ffffff;
+    --outline-variant: #c5c5d3;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+.small {
+font-size: 1.1rem;
+}
+
+h4 {
+font-size: 2rem;
+}
+
+h6 {
+font-size: 1.4rem;
+}
+
+span.badge {
+font-size: 1.1rem;
+}
+
+.inventstatus_span {
+font-size: 1.3rem;
+}
+
+h1, h2, h3, .headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+.h-10 {
+height: 2.5rem;
+}
+
+.btn_grafico {
+font-size: 1.2rem;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebar {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    height: calc(100vh - 72px);
+    width: 260px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    z-index: 40;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link.active {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    color: #fd7e14 !important;
+    font-weight: 600;
+}
+
+.glass-nav {
+    backdrop-filter: blur(20px);
+}
+
+.card-stat {
+    transition: all 0.2s ease;
+}
+.card-stat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.bar-chart div {
+    transition: height 0.4s ease;
+}
+
+.grafico_small small {
+font-size: 1rem;
+}
+
+.small {
+font-size: 1.2rem;
+}
+
+.text-1-1rem {
+font-size: 1.1rem;
+}
+
+.text-1-2rem {
+font-size: 1.2rem;
+}
+
+.text-1-4rem {
+    font-size: 1.4rem;
+}
+
+.text-1-8rem {
+    font-size: 1.8rem;
+}
