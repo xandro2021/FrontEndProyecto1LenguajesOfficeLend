@@ -81,6 +81,15 @@ h1, h2, h3, h4, h5, .brand-font {
     vertical-align: middle;
 }
 
+.editorialHeader-p {
+    font-size: 1.25rem;
+    color: var(--color-on-surface-variant);
+    max-width: 640px;
+    line-height: 1.7;
+    margin: 0px;
+}
+
+
 /* ── Stat Cards ── */
 .stat-card {
     background: var(--color-surface-container-lowest);
