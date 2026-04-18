@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>OfficeLend - Mis Préstamos</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/user/historialSolicitudesUser.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+    <!-- ── TopNavBar ── -->
+    <nav class="topnav fixed-top">
+        <div class="container-xxl d-flex justify-content-between align-items-center px-4 py-3" style="max-width:1440px">
+
+            <!-- Brand -->
+            <div class="d-flex align-items-center gap-3">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitkvWHc8xio_QqNfBdPEdzvlhbWkNcOTvHTfi7xaVrHdfXTG0y0fyuCJ-VstUiTlX7hItWs9LGmmLrYHuVwHzAGzflk6G5V85ZMdc3oOpXSJdUq0YFp0GSKAVSf_WRUmLXCX2xaK_t5JRSDTnD-0UPaGNYhdmIlBJwBwZr1E2cdrfrpmA23c2coPRP1Rfx-zitw7FhXm_0so7sboGiXOoJfgw5G1oGYbW5fgEkaoFwzwJaiKVnd-HXwlvEXR3KpQFBKBRfdES-zY"
+                     alt="OfficeLend Logo" style="height:32px;width:auto;" />
+                <a href="#" class="brand-name">OfficeLend</a>
+            </div>
+
+            <!-- Nav links (desktop) -->
+            <div class="d-none d-md-flex align-items-center gap-4">
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Catalog</a>
+                <a href="#" class="nav-link active">My Loans</a>
+            </div>
+
+            <!-- Actions -->
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn-icon">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <button class="btn-icon">
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+                <div class="avatar ms-2">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9tgDKXP-Wl2wPjWxqy1XKptQrd_7zxToSRsF1R_niPp4NKezrQFRbMzJb4CNzovafi_sjCrUW_Fd2vnUGK2KgLdIEKTtiFtG606CfigBzgpxUJK7bpOb5xh4zNOyR5eJEo87A8rLxANGO7R5q7Gu3grYJnKQmZZksSj8_kUPMI9x_8oDrjd6DjmXovmnyQTRYZRKlV2XURfbTG4GQndKJd4lfBA_Wa-n6Q1zUm3vJ-QAEbYNe6Hk4c7rKUPhPEc30uuYn1n1MeXs"
+                         alt="Avatar" />
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ── Main ── -->
+    <main class="pt-5 pb-5" style="padding-top: 7rem !important; max-width:1440px; margin:0 auto; padding-left:1.5rem; padding-right:1.5rem;">
+
+        <!-- Editorial Header -->
+        <div class="mb-5">
+            <h1 style="font-size:2.25rem; font-weight:900; letter-spacing:-0.03em; color:var(--color-primary); margin-bottom:.5rem;">
+                Mis Equipos Solicitados
+            </h1>
+            <p style="color:var(--color-on-surface-variant); max-width:640px; line-height:1.7; margin:0;">
+                Gestiona tus préstamos activos, revisa el historial de solicitudes y realiza el seguimiento de
+                tus devoluciones pendientes en un solo lugar.
+            </p>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="row g-4 mb-5">
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div>
+                        <p class="stat-label">Solicitudes Pendientes</p>
+                        <h3 class="stat-number text-secondary-color">02</h3>
+                    </div>
+                    <div class="stat-icon secondary">
+                        <span class="material-symbols-outlined">pending_actions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div>
+                        <p class="stat-label">Equipos en Uso</p>
+                        <h3 class="stat-number text-primary-color">04</h3>
+                    </div>
+                    <div class="stat-icon primary">
+                        <span class="material-symbols-outlined">inventory_2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="stat-card">
+                    <div>
+                        <p class="stat-label">Historial Completo</p>
+                        <h3 class="stat-number text-surface-color">28</h3>
+                    </div>
+                    <div class="stat-icon surface">
+                        <span class="material-symbols-outlined">history</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loan History Table -->
+        <div class="mb-4">
+            <!-- Section header -->
+            <div class="d-flex justify-content-between align-items-end border-bottom-subtle pb-3 mb-4">
+                <h2 class="section-title mb-0">Registro de Préstamos</h2>
+                <div class="d-flex gap-2">
+                    <button class="btn-filter">Filtrar por fecha</button>
+                    <button class="btn-filter">Exportar PDF</button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-card">
+                <div class="table-responsive">
+                    <table class="loans-table">
+                        <thead>
+                            <tr>
+                                <th>EQUIPO</th>
+                                <th>SOLICITUD</th>
+                                <th>DEVOLUCIÓN</th>
+                                <th>ESTADO</th>
+                                <th class="text-end">ACCIONES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <!-- Row 1: Aprobado -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="equipment-thumb">
+                                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2NCYgXWmom4bCFG5158pbm7eBujfnM19VVZh0RbWz5YRkp4dTVzTkMY0HWcccVheKPQEHZywJl5nNsX0-N3oZ4St09n6OidqWsdLmDemf73saWLvMt2AZd9NE7GOqgXsKnU8mQuTNnrO448qWoS9CaKlX2mrPGahA_L6keTyCuckW689zO00A2EDp7LgFa6NmG6IILEttmutFV5mz0v9eHO8CBP53gasBzljjFwuZCCcGuEpAISSAp40EAxMxHw7DDDmOVImI54U"
+                                                 alt="MacBook Pro 14" />
+                                        </div>
+                                        <div>
+                                            <p class="equipment-name mb-0">MacBook Pro 14"</p>
+                                            <p class="equipment-id mb-0">ID: OL-45920</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>12 Oct 2023</td>
+                                <td>25 Oct 2023</td>
+                                <td>
+                                    <span class="badge-status badge-approved">
+                                        <span class="badge-dot"></span>
+                                        Aprobado
+                                    </span>
+                                </td>
+                                <td class="text-end">
+                                    <button class="btn-action-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2: Pendiente -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="equipment-thumb">
+                                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6-OKhWcJef1Q3x30VcakW6zvXrwiKmYfCFbBX1BUx5hq5E36ZgPcWiYasL5_hSAIv70Zhk3bTo7Wef8_uOld2a0n16noDqEBp7RHLBRcZBMuv8Jq168Rg7GtHyMRlBwEFR5VkQkSRdxNAkEMVA_gJosZ_DSkrW_eokJHXUT90AeOQeaAnF0iWU6hIwnWoN4nz6JzT_qnrIhoLzG0opPFFrgMQFyzBW5sJjaK5rItOyHM8FtV9QnonsI6pOc7MAaEpbJt3iKvEwZc"
+                                                 alt="Nikon D850" />
+                                        </div>
+                                        <div>
+                                            <p class="equipment-name mb-0">Nikon D850</p>
+                                            <p class="equipment-id mb-0">ID: OL-88214</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>22 Oct 2023</td>
+                                <td>30 Oct 2023</td>
+                                <td>
+                                    <span class="badge-status badge-pending">
+                                        <span class="badge-dot"></span>
+                                        Pendiente
+                                    </span>
+                                </td>
+                                <td class="text-end">
+                                    <div class="d-flex justify-content-end gap-3">
+                                        <button class="btn-action-primary">Ver Detalles</button>
+                                        <button class="btn-action-error">Cancelar</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3: Devuelto -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="equipment-thumb">
+                                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Y6s3E0dV46bG2MJLyVDfxuQb-t2-4F4I0rH63PE86v6I9R5S4yt5wbfO2r92UTpEx2BJQzLUKlEaYaARm_m16wnmb0Jd3a_fuM6LM7umBQKIIyyRFvy6neyUolA-HNjcK_Ct-NxGcpyIR1DUJBqWZVq58vkHD6YxqaFyG3RvGqacPZzJsbOvC8cCVo-LaSpfwsGopiXfLvap5jqESKNUBGlSx6hSHCSDspuiRb8XEeP3QQ-qRxMytipCtbQVNn-H8pzXwmfeNqg"
+                                                 alt="iPad Pro 12.9" />
+                                        </div>
+                                        <div>
+                                            <p class="equipment-name mb-0">iPad Pro 12.9"</p>
+                                            <p class="equipment-id mb-0">ID: OL-33109</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>05 Sep 2023</td>
+                                <td>15 Sep 2023</td>
+                                <td>
+                                    <span class="badge-status badge-returned">
+                                        <span class="badge-dot"></span>
+                                        Devuelto
+                                    </span>
+                                </td>
+                                <td class="text-end">
+                                    <button class="btn-action-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4: Rechazado -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="equipment-thumb">
+                                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXN9seHfijjq0nU5_9gE1L3ZEF8zf_avp2f3IiHvAsC0moBRR6w2IO5jbfPZbRsNUfeqOta6uB9Af9UvGmxXXMIRVvFfar7ipWHXT39FWH9xtxl8DGVFcaDOVRY-526asxlXS7Qw3TaTH6IMbvo4qCJowOwRk6YpG4ND54bExw1vyGVzJ-rJ6DcSh94L2-JhGiusyJHjANAauUHBgazTWIuG4h2Sd1q7T5Y227kJl6ReJ9VTszn2hRYfiZkAuwH3MMAAqnnmRzs3E"
+                                                 alt="Dell XPS 15" />
+                                        </div>
+                                        <div>
+                                            <p class="equipment-name mb-0">Dell XPS 15</p>
+                                            <p class="equipment-id mb-0">ID: OL-11044</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>01 Oct 2023</td>
+                                <td>05 Oct 2023</td>
+                                <td>
+                                    <span class="badge-status badge-rejected">
+                                        <span class="badge-dot"></span>
+                                        Rechazado
+                                    </span>
+                                </td>
+                                <td class="text-end">
+                                    <button class="btn-action-primary">Revisar Motivo</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <p class="page-info mb-0">Mostrando 4 de 28 préstamos</p>
+                <div class="d-flex gap-2">
+                    <button class="pag-btn icon-btn">
+                        <span class="material-symbols-outlined" style="font-size:1.25rem;">chevron_left</span>
+                    </button>
+                    <button class="pag-btn active">1</button>
+                    <button class="pag-btn">2</button>
+                    <button class="pag-btn">3</button>
+                    <button class="pag-btn icon-btn">
+                        <span class="material-symbols-outlined" style="font-size:1.25rem;">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loan Track Banner -->
+        <div class="loan-track-banner mt-5">
+            <div class="banner-content">
+                <h2>Próxima Devolución</h2>
+                <div class="d-flex flex-column flex-md-row align-items-md-center gap-4">
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="progress-label-equipment">MacBook Pro 14"</span>
+                            <span>75% Tiempo Transcurrido</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="progress-meta">
+                            <span>Iniciado: 12 Oct</span>
+                            <span>Entrega: 25 Oct (En 3 días)</span>
+                        </div>
+                    </div>
+                    <button class="btn-extend">Solicitar Extensión</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FAB -->
+    <button class="fab" title="Nueva Solicitud">
+        <span class="material-symbols-outlined">add</span>
+        <span class="fab-tooltip">Nueva Solicitud</span>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
