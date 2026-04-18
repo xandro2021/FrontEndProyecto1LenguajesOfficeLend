@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <title>OfficeLend – Loan Request Details</title>
+    <link rel="stylesheet" href="../css/admin/verSolicitudAdmin.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+    <!-- ── Top Nav ─────────────────────────────────────────────────────── -->
+    <header class="top-navbar">
+        <div class="container-fluid px-4 px-lg-5" style="max-width:1440px; margin:auto;">
+            <div class="d-flex align-items-center justify-content-between py-3">
+
+                <!-- Brand + Nav -->
+                <div class="d-flex align-items-center gap-4">
+                    <span class="navbar-brand mb-0">OfficeLend</span>
+                    <nav class="d-none d-md-flex align-items-center gap-4">
+                        <a class="nav-link" href="#">Dashboard</a>
+                        <a class="nav-link" href="#">Equipment</a>
+                        <a class="nav-link active-link" href="#">Loans</a>
+                        <a class="nav-link" href="#">Reports</a>
+                    </nav>
+                </div>
+
+                <!-- Actions -->
+                <div class="d-flex align-items-center gap-2">
+                    <button class="icon-btn" aria-label="Notifications">
+                        <span class="material-symbols-outlined text-secondary" style="color:#475569">notifications</span>
+                    </button>
+                    <button class="icon-btn" aria-label="Settings">
+                        <span class="material-symbols-outlined" style="color:#475569">settings</span>
+                    </button>
+                    <div class="avatar-ring ms-1">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqLXievw3V9aAk2v_zBnUgvlof8bauwLUEd9PshscMCd8QZGI9njcJ_ElFLStEbJkOSmUmJAJO8SstlmSOJvUyAXArmGj_RYmnmF7d2e6ijWbQ40jMeAqDRk84H6ADAsUqTplwWc9yxGD0sRqnk6H4WM8vKPnn0jtUYBTNuPu4jL1oSkBuGu6cP76XRgWVBsBPhAd_lkbEOBToBDMLR8AanasEff04KuFAJsoQXMjFISuS1g3Z9ByweZJQgWzQICXP_DLwe_faGJ0"
+                             alt="User profile avatar" style="width:100%;height:100%;object-fit:cover;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── Main ────────────────────────────────────────────────────────── -->
+    <main style="max-width:1440px; margin:auto;" class="px-4 px-lg-5 py-5">
+
+        <!-- Header Actions -->
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-5">
+            <div class="d-flex align-items-center gap-3">
+                <button class="back-btn">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Back to List</span>
+                </button>
+                <div class="divider-v"></div>
+                <h1 class="mb-0 fs-3 fw-800 text-nowrap" style="color:var(--color-primary); font-family:'Manrope',sans-serif; font-weight:800; letter-spacing:-.5px;">
+                    Loan Request Details
+                </h1>
+            </div>
+            <div>
+                <span class="status-badge">
+                    <span class="material-symbols-outlined" style="font-size:.85rem; font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 20;">pending</span>
+                    Pending Review
+                </span>
+            </div>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="row g-4">
+
+            <!-- ── Left Column ─────────────────────────────────────────── -->
+            <div class="col-12 col-lg-8 d-flex flex-column gap-4">
+
+                <!-- Applicant Information Card -->
+                <section class="card-base">
+                    <div class="d-flex align-items-start justify-content-between mb-4">
+                        <div>
+                            <h2 class="fs-5 fw-bold mb-1" style="color:var(--color-primary);">Applicant Information</h2>
+                            <p class="mb-0 small" style="color:var(--color-on-surface-variant);">
+                                Review borrower credentials and institutional affiliation.
+                            </p>
+                        </div>
+                        <span class="material-symbols-outlined" style="color:var(--color-outline);">person</span>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                        <img class="applicant-photo"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOr2jXGiCv99-0tK9-QyP7ydPd97cIARa3snxSdw76TDLmbcm_K9zoYujQPGzGU0WHglrB4J676N85KFokA4hKYnI4v_W2x3Upf3JcQXmfXQaer_h_DlwiXE51pp8KZgkzzeOhx_ScbqCs7LvENnvNpJuzsDzXSTxhX8I83vqq0UbKaHieaY5PNJfAxU_RyNQnjsy72jJIgPnT2ZldjM4FrJOJ-M89OSTArl18XY-D30sYphBc9npf47R-Ibbaef69ArGXnig_fFg"
+                             alt="User profile" />
+
+                        <div class="row g-4 flex-grow-1 w-100">
+                            <div class="col-12 col-sm-6">
+                                <span class="field-label">Full Name</span>
+                                <p class="field-value mb-0">Dr. Elena Rodriguez</p>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <span class="field-label">Employee ID</span>
+                                <p class="field-value mb-0">FAC-2024-0982</p>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <span class="field-label">Department</span>
+                                <p class="field-value mb-0">Digital Humanities &amp; Media</p>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <span class="field-label">Contact Email</span>
+                                <p class="mb-0" style="font-size:1.05rem; font-weight:600; color:var(--color-primary); text-decoration:underline;">
+                                    e.rodriguez@ucr.edu
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Asset Information Card -->
+                <section class="card-base overflow-hidden position-relative">
+                    <div class="d-flex align-items-start justify-content-between mb-4">
+                        <div>
+                            <h2 class="fs-5 fw-bold mb-1" style="color:var(--color-primary);">Asset Information</h2>
+                            <p class="mb-0 small" style="color:var(--color-on-surface-variant);">
+                                Technical specifications for the requested hardware.
+                            </p>
+                        </div>
+                        <span class="material-symbols-outlined" style="color:var(--color-outline);">devices</span>
+                    </div>
+
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 col-md-4">
+                            <img class="equipment-img"
+                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcgrL7Gg88QFdZ6QafPFghzQfC30XMQnQTP-G_gzQHpQQC0VqDlyda2jhf0b-SRips379uAzFqWlw-NhY9gxindegA1CR6elS1yi4s8vy6IVdHflLVbYI-gRuWrffaka6kekrSwI-0qJPlilFXxoSAfWjFEtu_IWiAkdf_iXPxkQLaTJzruvMR8Z9sGItRZiJYWZmoHoQuDN2jHxJ149RxTdh96s-zDdVLQ5nnaKNJq34thBV4OXWvj_b9alWq0mScRvGWIBPJVJs"
+                                 alt="Equipment" />
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <span class="field-label">Equipment Name</span>
+                                    <p class="mb-0 fs-5 fw-bold" style="color:var(--color-on-surface);">
+                                        MacBook Pro 16" – M3 Max Chip
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <span class="field-label">Serial Number</span>
+                                    <span class="mono-chip">SN: UCR-MBP-2023-A9X</span>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <span class="field-label">Category</span>
+                                    <p class="mb-0 fw-semibold small d-flex align-items-center gap-1" style="color:var(--color-on-surface);">
+                                        <span class="material-symbols-outlined" style="font-size:1rem;">laptop_mac</span>
+                                        High-Performance Computing
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <span class="field-label">Condition at Checkout</span>
+                                    <div class="d-flex gap-2 mt-1">
+                                        <span class="badge-excellent">EXCELLENT</span>
+                                        <span class="badge-neutral">INSURED</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div><!-- /left col -->
+
+            <!-- ── Right Column ────────────────────────────────────────── -->
+            <div class="col-12 col-lg-4 d-flex flex-column gap-4">
+
+                <!-- Request Timeline -->
+                <section class="card-tinted">
+                    <h2 class="fs-5 fw-bold mb-4" style="color:var(--color-primary);">Request Timeline</h2>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-line"><div class="timeline-line-fill"></div></div>
+
+                        <div class="d-flex flex-column gap-4">
+                            <!-- Item 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot timeline-dot-primary">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <span class="field-label">Request Date</span>
+                                <p class="fw-bold mb-0" style="color:var(--color-on-surface);">Oct 24, 2023</p>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot timeline-dot-secondary">
+                                    <span class="material-symbols-outlined" style="color:var(--color-on-secondary-container);">event_repeat</span>
+                                </div>
+                                <span class="field-label">Expected Return</span>
+                                <p class="fw-bold mb-0" style="color:var(--color-on-surface);">Dec 15, 2023</p>
+                                <span style="font-size:.625rem; color:var(--color-secondary); font-weight:600; font-style:italic;">
+                                    (52 Days duration)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Purpose -->
+                    <div class="mt-4 pt-4" style="border-top:1px solid rgba(197,197,211,.35);">
+                        <span class="field-label mb-2 d-block">Purpose of Request</span>
+                        <p class="purpose-quote mb-0">
+                            "The equipment is required for the upcoming 'Digital Archives of 20th Century' seminar.
+                            I will be using specialized video rendering software that requires high-performance hardware
+                            for student presentations."
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Action Zone -->
+                <section class="card-action">
+                    <div class="mb-4">
+                        <h2 class="fs-5 fw-bold mb-1">Decision Required</h2>
+                        <p class="mb-0 small" style="color:var(--color-primary-fixed-dim); opacity:.85;">
+                            This action will notify the applicant immediately via their institutional email.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <button class="btn-approve">
+                            <span class="material-symbols-outlined">check_circle</span>
+                            Approve Loan
+                        </button>
+                        <button class="btn-reject">
+                            <span class="material-symbols-outlined">cancel</span>
+                            Reject Request
+                        </button>
+                    </div>
+
+                    <div class="pt-3" style="border-top:1px solid rgba(255,255,255,.12);">
+                        <p class="admin-note mb-0">Administrator Verification Required</p>
+                    </div>
+                </section>
+
+                <!-- System Log -->
+                <div class="log-chip">
+                    <div class="log-icon">
+                        <span class="material-symbols-outlined" style="color:var(--color-outline);">history</span>
+                    </div>
+                    <div>
+                        <p class="field-label mb-1">Last Activity</p>
+                        <p class="mb-0 small" style="color:var(--color-on-surface-variant);">
+                            Request submitted by Elena Rodriguez · 2h ago
+                        </p>
+                    </div>
+                </div>
+
+            </div><!-- /right col -->
+
+        </div><!-- /row -->
+    </main>
+
+    <!-- ── Footer ───────────────────────────────────────────────────────── -->
+    <footer class="site-footer">
+        <div class="container-fluid px-4 px-lg-5 d-flex flex-wrap justify-content-between align-items-center gap-3" style="max-width:1440px; margin:auto;">
+            <p class="mb-0">© 2024 OfficeLend • UCR Equipment Control System</p>
+            <div class="d-flex gap-4">
+                <a href="#">Policy</a>
+                <a href="#">Support</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
