@@ -16,43 +16,45 @@
 
 <body>
 
-    <!-- ── TopNavBar ── -->
-    <nav class="topnav fixed-top">
-        <div class="container-xxl d-flex justify-content-between align-items-center px-4 py-3" style="max-width:1440px">
+    <header class="sticky-top bg-white shadow-sm" style="backdrop-filter: blur(8px);">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="d-flex align-items-center gap-2">
+                    <img alt="OfficeLend Logo" class="h-10 w-10 rounded-3"
+                        src="../img/logo.png">
+                    <span class="fs-3 fw-bold text-custom-primary font-headline tracking-tight">OfficeLend</span>
+                </div>
 
-            <!-- Brand -->
-            <div class="d-flex align-items-center gap-3">
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitkvWHc8xio_QqNfBdPEdzvlhbWkNcOTvHTfi7xaVrHdfXTG0y0fyuCJ-VstUiTlX7hItWs9LGmmLrYHuVwHzAGzflk6G5V85ZMdc3oOpXSJdUq0YFp0GSKAVSf_WRUmLXCX2xaK_t5JRSDTnD-0UPaGNYhdmIlBJwBwZr1E2cdrfrpmA23c2coPRP1Rfx-zitw7FhXm_0so7sboGiXOoJfgw5G1oGYbW5fgEkaoFwzwJaiKVnd-HXwlvEXR3KpQFBKBRfdES-zY"
-                     alt="OfficeLend Logo" style="height:32px;width:auto;" />
-                <a href="#" class="brand-name">OfficeLend</a>
-            </div>
+                <!-- Navegación desktop -->
+                <nav class="d-none d-md-flex gap-4">
+                    <a class="nav-link text-secondary fw-medium" href="#">Dashboard</a>
+                    <a class="nav-link active text-custom-primary" href="#">Equipos</a>
+                    <a class="nav-link text-secondary fw-medium" href="#">Préstamos</a>
+                    <a class="nav-link text-secondary fw-medium" href="#">Reportes</a>
+                </nav>
 
-            <!-- Nav links (desktop) -->
-            <div class="d-none d-md-flex align-items-center gap-4">
-                <a href="#" class="nav-link">Dashboard</a>
-                <a href="#" class="nav-link">Catalog</a>
-                <a href="#" class="nav-link active">My Loans</a>
-            </div>
-
-            <!-- Actions -->
-            <div class="d-flex align-items-center gap-2">
-                <button class="btn-icon">
-                    <span class="material-symbols-outlined">notifications</span>
-                </button>
-                <button class="btn-icon">
-                    <span class="material-symbols-outlined">settings</span>
-                </button>
-                <div class="avatar ms-2">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9tgDKXP-Wl2wPjWxqy1XKptQrd_7zxToSRsF1R_niPp4NKezrQFRbMzJb4CNzovafi_sjCrUW_Fd2vnUGK2KgLdIEKTtiFtG606CfigBzgpxUJK7bpOb5xh4zNOyR5eJEo87A8rLxANGO7R5q7Gu3grYJnKQmZZksSj8_kUPMI9x_8oDrjd6DjmXovmnyQTRYZRKlV2XURfbTG4GQndKJd4lfBA_Wa-n6Q1zUm3vJ-QAEbYNe6Hk4c7rKUPhPEc30uuYn1n1MeXs"
-                         alt="Avatar" />
+                <!-- Acciones usuario -->
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-custom-primary p-2">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="btn btn-link text-custom-primary p-2">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="rounded-circle overflow-hidden border border-light shadow-sm"
+                        style="width: 40px; height: 40px;">
+                        <img alt="User profile" class="w-100 h-100 object-fit-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw7nxzJSdrR71CDJcr7kC74LjSK0FQ4lqpD3NebHzuBF2OKLcobdpMmXLTfXGjKhnwCsGDV2mN9HPKDx-tqzf23jNvhXxFM75S6XKC3LG98PiUY7HxPnK2lIS1M_4GLStSAhndvd9Qn50PRYC5jcBbYgw4BSiKmrhfaCEilKQgy1fH7KuLwKDGqS4BSOc6v4w6xKL722wJvMxtVxo4_cE_vR5qmR6qfuI_PH9r7xPCSIJzDIrCuivh_EQ1OP5_X1nTqItkinNBbVc">
+                    </div>
                 </div>
             </div>
-
         </div>
-    </nav>
+    </header>
 
     <!-- ── Main ── -->
-    <main class="pt-5 pb-5" style="padding-top: 7rem !important; max-width:1440px; margin:0 auto; padding-left:1.5rem; padding-right:1.5rem;">
+    <!-- <main class="pt-5 pb-5" style="padding-top: 7rem !important; max-width:1440px; margin:0 auto; padding-left:1.5rem; padding-right:1.5rem;"> -->
+    <main class="container py-5">
 
         <!-- Editorial Header -->
         <div class="mb-5">

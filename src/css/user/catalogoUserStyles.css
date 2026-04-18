@@ -46,6 +46,16 @@ a {
     border: 1px solid var(--primary);
 }
 
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
 .rounded-2xl { border-radius: 1rem; }
 .rounded-xl { border-radius: 0.75rem; }
 
