@@ -33,6 +33,10 @@ body {
     vertical-align: middle;
 }
 
+.font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
 .h-8 {
     height: 2rem;
 }
