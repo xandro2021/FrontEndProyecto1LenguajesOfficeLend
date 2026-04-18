@@ -234,15 +234,3 @@ select.form-custom-input {
     color: #9aafff69;
 }
 
-/* misc */
-.tracking-\[0\.2em\] { letter-spacing: 0.2em; }
-
-.w-\[calc\(100\%-16rem\)\] { width: calc(100% - 16rem); }
-
-@media (max-width: 767.98px) {
-    .w-\[calc\(100\%-16rem\)\] { width: 100%; }
-}
-
-.bg-white\/80 { background-color: rgba(255,255,255,0.8); }
-
-.backdrop-blur-xl { backdrop-filter: blur(24px); }
