@@ -29,6 +29,23 @@ body {
     color: var(--on-surface);
 }
 
+a {
+    color: var(--primary);
+}
+
+.text-custom-primary {
+    color: var(--primary);
+}
+
+.btn-custom-primary {
+    background-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.btn-custom-primary:hover {
+    border: 1px solid var(--primary);
+}
+
 .rounded-2xl { border-radius: 1rem; }
 .rounded-xl { border-radius: 0.75rem; }
 
@@ -223,6 +240,20 @@ body {
 .btn-primary-custom:hover {
     background-color: #001a5a;
     border-color: #001a5a;
+    color: var(--on-primary);
+}
+
+.btn-outline-primary-custom {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: var(--surface);
+    transition: all 0.2s ease;
+}
+
+.btn-outline-primary-custom:hover {
+    color: var(--surface);
+    border: 1px solid var(--surface);
+    background-color: var(--primary);
 }
 
 .nav-link.active {
