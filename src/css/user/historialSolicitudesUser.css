@@ -101,6 +101,12 @@ h1, h2, h3, h4, h5, .brand-font {
     margin: 0px;
 }
 
+/* Navbar */
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 2px solid #F59E0B;
+    font-weight: 700;
+}
 
 /* ── Stat Cards ── */
 .stat-card {

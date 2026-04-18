@@ -75,6 +75,16 @@ main {
     margin: 0px;
 }
 
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 2px solid #F59E0B;
+    font-weight: 700;
+}
+
+.text-custom-primary {
+    color: var(--primary);
+}
+
 /* ── Equipment Card ── */
 .equipment-card {
     background: var(--surface-container-lowest);
