@@ -22,6 +22,8 @@
 
     --color-on-surface:           #191c1e;
     --color-on-surface-variant:   #444651;
+    --on-surface-variant:   #444651;
+    --color-on-surface-variant:   #444651;
     --color-outline-variant:      #c5c5d3;
 
     --color-error:                #ba1a1a;
@@ -81,9 +83,19 @@ h1, h2, h3, h4, h5, .brand-font {
     vertical-align: middle;
 }
 
-.editorialHeader-p {
+.page-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+    margin-bottom: 0.35rem;
+    line-height: 1.1;
+}
+
+.page-subtitle {
     font-size: 1.25rem;
-    color: var(--color-on-surface-variant);
+    color: var(--on-surface-variant);
     max-width: 640px;
     line-height: 1.7;
     margin: 0px;

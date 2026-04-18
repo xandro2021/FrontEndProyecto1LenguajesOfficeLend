@@ -33,71 +33,22 @@ body {
     vertical-align: middle;
 }
 
-/* ── Navbar ── */
-.top-navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1050;
-    background: rgba(248, 250, 252, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    height: 64px;
+.h-8 {
+    height: 2rem;
 }
 
-.navbar-brand-text {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.35rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #1e3560, #1d4ed8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -0.02em;
-    text-decoration: none;
+.w-8 {
+    width: 2rem;
 }
 
-.nav-link-active {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    color: #00236f !important;
-    border-bottom: 2px solid #00236f;
-    padding-bottom: 2px;
-    font-size: 0.9rem;
-    letter-spacing: -0.01em;
-    text-decoration: none;
+.h-10 {
+    height: 2.5rem;
 }
 
-.nav-link-inactive {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    color: #475569 !important;
-    font-size: 0.9rem;
-    letter-spacing: -0.01em;
-    text-decoration: none;
-    transition: color 0.2s;
+.w-10 {
+    width: 2.5rem;
 }
-.nav-link-inactive:hover { color: #1d4ed8 !important; }
 
-.icon-btn {
-    background: none;
-    border: none;
-    color: #475569;
-    padding: 0;
-    transition: color 0.2s;
-    cursor: pointer;
-}
-.icon-btn:hover { color: #1d4ed8; }
-
-.avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid rgba(197,197,211,0.35);
-    object-fit: cover;
-    overflow: hidden;
-}
 
 /* ── Main ── */
 main {
@@ -117,9 +68,11 @@ main {
 }
 
 .page-subtitle {
+    font-size: 1.25rem;
     color: var(--on-surface-variant);
-    font-size: 1.05rem;
-    max-width: 560px;
+    max-width: 640px;
+    line-height: 1.7;
+    margin: 0px;
 }
 
 /* ── Equipment Card ── */
