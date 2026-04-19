@@ -12,39 +12,51 @@
 </head>
 <body class="bg-surface">
 
-    <!-- Top App Bar (Fixed) -->
-    <header class="topbar-fixed d-flex align-items-center justify-content-between px-4 px-lg-5" style="height: 4rem;">
-        <div class="d-flex align-items-center gap-4">
-            <span class="fw-bold text-primary font-headline fs-5">Equipment Manager</span>
-            <div class="d-none d-md-flex gap-4">
-                <a href="#" class="text-decoration-none small fw-semibold text-primary">Guidelines</a>
-                <a href="#" class="text-decoration-none small text-secondary-hover text-secondary-emphasis">Activity Log</a>
-            </div>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-            <div class="position-relative">
-                <span class="material-symbols-outlined text-primary p-2 rounded-circle cursor-pointer" style="cursor: pointer;">notifications</span>
-                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-secondary border border-white rounded-circle" style="margin-top: 2px;"></span>
-            </div>
-            <div class="vr bg-secondary opacity-25 mx-1" style="height: 1.5rem;"></div>
-            <div class="d-flex align-items-center gap-2 cursor-pointer">
-                <span class="material-symbols-outlined text-primary fs-2">account_circle</span>
+    <header class="sticky-top bg-white shadow-sm" style="backdrop-filter: blur(8px);">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="d-flex align-items-center gap-2">
+                    <img alt="OfficeLend Logo" class="h-10 w-10 rounded-3" src="../img/logo.png">
+                    <span class="fs-3 fw-bold text-custom-primary font-headline tracking-tight">OfficeLend</span>
+                </div>
+
+                <!-- Navegación desktop -->
+                <nav class="d-none d-md-flex gap-4">
+                    <a class="nav-link text-custom-primary " href="#">Dashboard</a>
+                    <a class="nav-link active text-custom-primary " href="catalogoUser.html">Equipos</a>
+                    <a class="nav-link text-custom-primary " href="historialSolicitudesUser.html">Préstamos</a>
+                    <a class="nav-link text-custom-primary " href="#">Reportes</a>
+                </nav>
+
+                <!-- Acciones usuario -->
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-custom-primary p-2">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="btn btn-link text-custom-primary p-2">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="rounded-circle overflow-hidden border border-light shadow-sm"
+                        style="width: 40px; height: 40px;">
+                        <img alt="User profile" class="w-100 h-100 object-fit-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw7nxzJSdrR71CDJcr7kC74LjSK0FQ4lqpD3NebHzuBF2OKLcobdpMmXLTfXGjKhnwCsGDV2mN9HPKDx-tqzf23jNvhXxFM75S6XKC3LG98PiUY7HxPnK2lIS1M_4GLStSAhndvd9Qn50PRYC5jcBbYgw4BSiKmrhfaCEilKQgy1fH7KuLwKDGqS4BSOc6v4w6xKL722wJvMxtVxo4_cE_vR5qmR6qfuI_PH9r7xPCSIJzDIrCuivh_EQ1OP5_X1nTqItkinNBbVc">
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Main Content Area -->
-    <main class="pt-5 pb-5 px-4 px-lg-5" style="margin-top: 4rem;">
-        <div class="container-fluid px-0" style="max-width: 1200px;">
+    <main class="container py-5">
             <!-- Breadcrumbs / Editorial header -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-4 mb-5">
                 <div>
-                    <span class="text-secondary fw-bold text-uppercase small tracking-[0.2em] d-block mb-2" style="letter-spacing: 0.2rem;">Curation Module</span>
-                    <h2 class="display-5 fw-extrabold font-headline text-primary" style="font-weight: 800;">Gestión de Equipo</h2>
-                    <p class="text-on-surface-variant mt-2 fs-5">Refine and catalog academic assets with institutional precision.</p>
+                    <h2 class="page-title">Gestión de Equipo</h2>
+                    <p class="page-subtitle">Refine and catalog academic assets with institutional precision.</p>
                 </div>
                 <div class="d-flex gap-3">
-                    <button class="btn btn-outline-secondary border-outline-variant text-primary fw-semibold px-4 py-2 rounded-lg btn-scale-active" style="background: transparent;">Cancelar</button>
+                    <button class="btn btn-custom-primary border-outline-variant text-custom-primary fw-semibold px-4 py-2 rounded-lg btn-scale-active" style="background: transparent;">Cancelar</button>
                     <button class="btn bg-gradient-br-secondary text-white fw-bold px-5 py-2 rounded-lg shadow-sm btn-scale-active" style="background: linear-gradient(135deg, #855300, #fea619); border: none;">Guardar Cambios</button>
                 </div>
             </div>
@@ -63,7 +75,7 @@
                                 <p class="small text-muted" style="font-size: 0.625rem;">JPG, PNG or WEBP (Max. 5MB)</p>
                             </div>
                             <div class="mt-4">
-                                <label class="fw-bold text-primary mb-2 small">Current Status</label>
+                                <label class="fw-bold text-custom-primary mb-2 small">Current Status</label>
                                 <div class="position-relative">
                                     <select class="form-custom-input w-100 rounded-top">
                                         <option value="disponible">Disponible</option>
@@ -102,16 +114,16 @@
                 <div class="col-lg-8 col-12">
                     <div class="bg-surface-container-lowest rounded-xl p-4 p-lg-5 shadow-sm border" style="border-color: rgba(197,197,211,0.15);">
                         <div class="border-bottom pb-3 mb-4 border-surface-container-high">
-                            <h3 class="font-headline fw-bold text-primary fs-4">Technical Specifications</h3>
+                            <h3 class="font-headline fw-bold text-custom-primary fs-4">Technical Specifications</h3>
                             <p class="text-on-surface-variant small mt-1">Provide comprehensive details for accurate academic logging.</p>
                         </div>
                         <div class="row g-4">
                             <div class="col-12">
-                                <label class="fw-bold text-primary small text-uppercase mb-2">Equipment Name</label>
+                                <label class="fw-bold text-custom-primary small text-uppercase mb-2">Equipment Name</label>
                                 <input type="text" class="form-custom-input w-100" placeholder='e.g. MacBook Pro 14"' value='MacBook Pro 14" M3 Pro' />
                             </div>
                             <div class="col-md-6">
-                                <label class="fw-bold text-primary small text-uppercase mb-2">Category</label>
+                                <label class="fw-bold text-custom-primary small text-uppercase mb-2">Category</label>
                                 <div class="position-relative">
                                     <select class="form-custom-input w-100">
                                         <option selected>Laptops</option>
@@ -124,17 +136,17 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <label class="fw-bold text-primary small text-uppercase mb-2">Serial Number / Asset ID</label>
+                                <label class="fw-bold text-custom-primary small text-uppercase mb-2">Serial Number / Asset ID</label>
                                 <input type="text" class="form-custom-input w-100" placeholder="SN-XXXX-XXXX" />
                             </div>
                             <div class="col-12">
-                                <label class="fw-bold text-primary small text-uppercase mb-2">Description / Technical Specs</label>
+                                <label class="fw-bold text-custom-primary small text-uppercase mb-2">Description / Technical Specs</label>
                                 <textarea class="form-custom-input w-100" rows="5" placeholder="Detail processors, RAM, storage, or specific laboratory requirements..."></textarea>
                             </div>
                         </div>
                         <!-- Loan History / Life-Cycle component -->
                         <div class="mt-5 pt-3 border-top border-surface-container-high">
-                            <label class="fw-bold text-primary small text-uppercase mb-3 d-block">Deployment Life-Cycle</label>
+                            <label class="fw-bold text-custom-primary small text-uppercase mb-3 d-block">Deployment Life-Cycle</label>
                             <div class="bg-surface-container-low p-4 rounded-lg">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
                                     <span class="small fw-semibold">Utilización de Vida Útil</span>
@@ -149,12 +161,11 @@
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <!-- Mobile Action Bar (Fixed bottom for small screens) -->
     <div class="mobile-action-bar position-fixed bottom-0 start-0 end-0 bg-white shadow-lg p-3 gap-3 z-1030 d-md-none">
-        <button class="btn btn-outline-secondary flex-grow-1 py-2 rounded-lg border-outline-variant text-primary fw-semibold">Cancelar</button>
+        <button class="btn btn-outline-secondary flex-grow-1 py-2 rounded-lg border-outline-variant text-custom-primary fw-semibold">Cancelar</button>
         <button class="btn bg-secondary text-white flex-grow-1 py-2 rounded-lg fw-semibold" style="background-color: #855300;">Guardar</button>
     </div>
 

@@ -1,5 +1,145 @@
+:root {
+    --primary: #00236f;
+    --primary-light: #1e3a8a;
+    --primary-container: #1e3a8a;
+    --secondary: #855300;
+    --secondary-light: #fea619;
+    --surface: #f7f9fb;
+    --surface-container-low: #f2f4f6;
+    --surface-container-lowest: #ffffff;
+    --surface-container: #eceef0;
+    --on-surface: #191c1e;
+    --on-surface-variant: #444651;
+    --outline: #757682;
+    --outline-variant: #c5c5d3;
+    --error: #ba1a1a;
+    --error-container: #ffdad6;
+    --green-600: #16a34a;
+    --amber-700: #b45309;
+    --purple-700: #6b21a8;
+    --blue-700: #1d4ed8;
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+}
 
-/* ----- Reset / base styles matching original color palette & fonts ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+h1, h2, h3, .brand-font {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.fs-1-3rem {
+    font-size: 1.3rem;
+}
+
+
+/* ── Main ── */
+main {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+/* ── Page Header ── */
+.page-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+    margin-bottom: 0.35rem;
+    line-height: 1.1;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: var(--on-surface-variant);
+    max-width: 640px;
+    line-height: 1.7;
+    margin: 0px;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 2px solid #F59E0B;
+    font-weight: 700;
+}
+
+.btn-custom-primary {
+    background-color: var(--primary);
+    color: var(--surface-container-lowest);
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--surface-container-lowest);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.text-custom-primary {
+    color: var(--primary);
+}
+
+input {
+    padding-left: 1rem;
+}
+
+/* Scrollbar style (tonal silencing) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #e0e3e5;
+    border-radius: 10px;
+}
+
+/* Material Icons alignment */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+    font-size: 1.3rem;
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f7f9fb;   /* surface / background */
@@ -87,21 +227,6 @@ body {
     margin-left: 16rem;
 }
 
-/* top bar fixed offset */
-.topbar-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 16rem;
-    z-index: 1040;
-    background-color: rgba(255,255,255,0.8);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-}
-
-.dark .topbar-fixed {
-    background-color: rgba(15,23,42,0.8);
-}
 
 /* mobile bottom bar */
 .mobile-action-bar {
@@ -109,17 +234,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
-    .sidebar-fixed {
-        transform: translateX(-100%);
-        transition: transform 0.2s ease;
-    }
 
     .main-offset {
         margin-left: 0;
-    }
-
-    .topbar-fixed {
-        left: 0;
     }
 
     .mobile-action-bar {
@@ -132,19 +249,6 @@ body {
     }
 }
 
-/* simulates active nav item (border-right-4) */
-.nav-active {
-    color: #00236f;
-    background-color: #f1f5f9;
-    border-right: 4px solid #00236f;
-    font-weight: 700;
-}
-
-.dark .nav-active {
-    color: #b6c4ff;
-    background-color: #1e293b;
-    border-right-color: #b6c4ff;
-}
 
 /* custom focus rings for inputs, mimicking Tailwind's ring */
 .form-custom-input {
@@ -155,6 +259,7 @@ body {
     padding: 0.75rem 0;
     font-weight: 500;
     transition: all 0.2s;
+    padding-left: 1rem;
 }
 
 .form-custom-input:focus {
@@ -173,26 +278,6 @@ select.form-custom-input {
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     appearance: none;
-}
-
-/* hover transitions for sidebar links */
-.sidebar-link {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    color: #64748b;
-    transition: all 0.2s;
-}
-
-.sidebar-link:hover {
-    background-color: rgba(203,213,225,0.5);
-}
-
-.dark .sidebar-link:hover {
-    background-color: #1e293b;
 }
 
 /* custom progress */
