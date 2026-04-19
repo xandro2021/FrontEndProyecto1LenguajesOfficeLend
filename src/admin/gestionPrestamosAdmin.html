@@ -21,45 +21,43 @@
 
 <body>
 
-    <!-- ── TopNavBar ── -->
-    <nav class="topnav">
-        <div class="container-xxl d-flex align-items-center justify-content-between px-4 py-3" style="max-width:1440px">
-
-            <!-- Brand -->
-            <div class="d-flex align-items-center gap-3">
-                <img alt="OfficeLend Logo" class="h-8" style="height:32px;"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitkvWHc8xio_QqNfBdPEdzvlhbWkNcOTvHTfi7xaVrHdfXTG0y0fyuCJ-VstUiTlX7hItWs9LGmmLrYHuVwHzAGzflk6G5V85ZMdc3oOpXSJdUq0YFp0GSKAVSf_WRUmLXCX2xaK_t5JRSDTnD-0UPaGNYhdmIlBJwBwZr1E2cdrfrpmA23c2coPRP1Rfx-zitw7FhXm_0so7sboGiXOoJfgw5G1oGYbW5fgEkaoFwzwJaiKVnd-HXwlvEXR3KpQFBKBRfdES-zY" />
-                <span class="navbar-brand mb-0 p-0"><span>OfficeLend</span></span>
-            </div>
-
-            <!-- Nav links -->
-            <div class="d-none d-md-flex align-items-center gap-4">
-                <a class="nav-link" href="#">Dashboard</a>
-                <a class="nav-link" href="#">Equipment</a>
-                <a class="nav-link active" href="#">Loans</a>
-                <a class="nav-link" href="#">Reports</a>
-            </div>
-
-            <!-- Right controls -->
-            <div class="d-flex align-items-center gap-3">
-                <div class="topnav-search d-none d-lg-block me-2">
-                    <span class="material-symbols-outlined search-icon">search</span>
-                    <input placeholder="Buscar préstamos..." type="text" />
+    <header class="sticky-top bg-white shadow-sm" style="backdrop-filter: blur(8px);">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="d-flex align-items-center gap-2">
+                    <img alt="OfficeLend Logo" class="h-10 w-10 rounded-3" src="../img/logo.png">
+                    <span class="fs-3 fw-bold text-custom-primary font-headline tracking-tight">OfficeLend</span>
                 </div>
-                <button class="topnav-icon-btn">
-                    <span class="material-symbols-outlined">notifications</span>
-                </button>
-                <div class="topnav-avatar ms-2">
-                    <img alt="Admin profile avatar" style="width:100%;height:100%;object-fit:cover;"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyKc30MqdzaUKmtnNAACmaE0sXBUpGKp2RIEXHgnhCc5-58VNVEuxvFDh9Jk-iVJCAk6ejraPaflojDSKg8fHVnywgwUwvGpmguUqULMCUGWaKO88ho32A7Bk-TAwZYkBQ4d9KLuJ_lVmNUCaE4OkFc65LOQmb_mSU0MzTkMxNoXlzgw9_u9QXz4AncqcxmyKjxpcs-ZeRiQzDfViDFAbXyIMJH5-L77LvHfVCLEwyMEBrJZeoZTkfqk2-ZQzwbaRddJqB_A0fCeE" />
+
+                <!-- Navegación desktop -->
+                <nav class="d-none d-md-flex gap-4">
+                    <a class="nav-link text-custom-primary " href="#">Dashboard</a>
+                    <a class="nav-link text-custom-primary " href="catalogoUser.html">Equipos</a>
+                    <a class="nav-link active text-custom-primary " href="historialSolicitudesUser.html">Préstamos</a>
+                    <a class="nav-link text-custom-primary " href="#">Reportes</a>
+                </nav>
+
+                <!-- Acciones usuario -->
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-custom-primary p-2">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="btn btn-link text-custom-primary p-2">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="rounded-circle overflow-hidden border border-light shadow-sm"
+                        style="width: 40px; height: 40px;">
+                        <img alt="User profile" class="w-100 h-100 object-fit-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw7nxzJSdrR71CDJcr7kC74LjSK0FQ4lqpD3NebHzuBF2OKLcobdpMmXLTfXGjKhnwCsGDV2mN9HPKDx-tqzf23jNvhXxFM75S6XKC3LG98PiUY7HxPnK2lIS1M_4GLStSAhndvd9Qn50PRYC5jcBbYgw4BSiKmrhfaCEilKQgy1fH7KuLwKDGqS4BSOc6v4w6xKL722wJvMxtVxo4_cE_vR5qmR6qfuI_PH9r7xPCSIJzDIrCuivh_EQ1OP5_X1nTqItkinNBbVc">
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- ── Main ── -->
-    <main class="container-xxl px-4" style="max-width:1440px">
-
+    <main class="container py-5">
         <!-- Editorial Header -->
         <div class="mb-5 d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3">
             <div>
@@ -133,7 +131,7 @@
             </div>
 
             <!-- Table -->
-            <div class="data-table-wrapper mb-4">
+            <div class="data-table-wrapper mb-4 shadow-xl">
                 <div class="table-responsive">
                     <table class="data-table">
                         <thead>
@@ -313,7 +311,7 @@
             </div>
             <!-- Tiempo Promedio -->
             <div class="col-12 col-md-6">
-                <div class="perf-secondary">
+                <div class="perf-secondary shadow-xl">
                     <div>
                         <h2>Tiempo Promedio</h2>
                         <p class="mb-0">El tiempo de respuesta ha disminuido significativamente.</p>
