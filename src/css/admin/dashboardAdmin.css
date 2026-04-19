@@ -1,5 +1,4 @@
 :root {
-    /* Colores extraídos del tema Tailwind original */
     --surface: #f7f9fb;
     --on-surface: #191c1e;
     --on-surface-variant: #444651;
@@ -30,6 +29,127 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: var(--surface);
     color: var(--on-surface);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+h1, h2, h3, .brand-font {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-title {
+    font-size: 2.8rem;
+}
+
+.fs-1-3rem {
+    font-size: 1.3rem;
+}
+
+.fs-n3,
+a {
+    font-size: 1.62rem;
+}
+
+
+/* ── Main ── */
+main {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+/* ── Page Header ── */
+.page-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+    margin-bottom: 0.35rem;
+    line-height: 1.1;
+}
+
+.page-subtitle {
+    font-size: 2rem;
+    color: var(--on-surface-variant);
+    max-width: 640px;
+    line-height: 1.7;
+    margin: 0px;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 2px solid #F59E0B;
+    font-weight: 700;
+}
+
+.btn-custom-primary {
+    background-color: var(--primary);
+    color: var(--surface-container-lowest);
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--surface-container-lowest);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.text-custom-primary {
+    color: var(--primary);
+}
+
+/* Scrollbar style (tonal silencing) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #e0e3e5;
+    border-radius: 10px;
+}
+
+/* Material Icons alignment */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+    font-size: 2rem;
 }
 
 .small {
@@ -70,31 +190,6 @@ font-size: 1.2rem;
     vertical-align: middle;
 }
 
-.sidebar {
-    position: fixed;
-    top: 72px;
-    left: 0;
-    height: calc(100vh - 72px);
-    width: 260px;
-    background-color: #f8f9fa;
-    border-right: 1px solid #dee2e6;
-    z-index: 40;
-    overflow-y: auto;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-link.active {
-    background-color: white;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    color: #fd7e14 !important;
-    font-weight: 600;
-}
-
-.glass-nav {
-    backdrop-filter: blur(20px);
-}
 
 .card-stat {
     transition: all 0.2s ease;
