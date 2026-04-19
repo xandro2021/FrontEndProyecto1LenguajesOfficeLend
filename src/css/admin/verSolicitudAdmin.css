@@ -1,5 +1,6 @@
 :root {
     --color-primary:              #00236f;
+    --primary:              #00236f;
     --color-primary-container:    #1e3a8a;
     --color-on-primary-container: #90a8ff;
     --color-secondary:            #855300;
@@ -19,80 +20,113 @@
 }
 
 /* ─── Base ──────────────────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--color-surface);
-    color: var(--color-on-surface);
+    background-color: var(--surface);
+    color: var(--on-surface);
 }
 
 h1, h2, h3, .brand-font {
     font-family: 'Manrope', sans-serif;
 }
 
+
+.font-headline {
+    font-family: 'Manrope', sans-serif;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.fs-1-3rem {
+    font-size: 1.3rem;
+}
+
+
+/* ── Main ── */
+main {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+/* ── Page Header ── */
+.page-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+    margin-bottom: 0.35rem;
+    line-height: 1.1;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: var(--on-surface-variant);
+    max-width: 640px;
+    line-height: 1.7;
+    margin: 0px;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+    border-bottom: 2px solid #F59E0B;
+    font-weight: 700;
+}
+
+.btn-custom-primary {
+    background-color: var(--primary);
+    color: var(--surface-container-lowest);
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--surface-container-lowest);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.text-custom-primary {
+    color: var(--primary);
+}
+
+/* Scrollbar style (tonal silencing) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #e0e3e5;
+    border-radius: 10px;
+}
+
+/* Material Icons alignment */
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     vertical-align: middle;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
-/* ─── Top Nav ────────────────────────────────────────────────── */
-.top-navbar {
-    background-color: rgba(247, 249, 251, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 1px 3px rgba(0,0,0,.07);
-    position: sticky;
-    top: 0;
-    z-index: 1050;
-}
-
-.top-navbar .navbar-brand {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-    font-size: 1.4rem;
-    color: #1e3a8a;
-    letter-spacing: -0.5px;
-}
-
-.top-navbar .nav-link {
-    font-size: .9rem;
-    color: #475569;
-    padding: .25rem 0;
-    transition: color .2s;
-}
-
-.top-navbar .nav-link:hover { color: #1e3a8a; }
-
-.top-navbar .nav-link.active-link {
-    color: #1e3a8a;
-    font-weight: 700;
-    border-bottom: 2px solid #f97316;
-    padding-bottom: 2px;
-}
-
-.icon-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    border: none;
-    background: transparent;
-    border-radius: .375rem;
-    transition: background .2s, transform .1s;
-    cursor: pointer;
-}
-
-.icon-btn:hover  { background-color: rgba(148, 163, 184, .25); }
-.icon-btn:active { transform: scale(.95); }
-
-.avatar-ring {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: var(--color-primary-container);
-}
 
 /* ─── Page Header Actions ────────────────────────────────────── */
 .back-btn {
@@ -371,22 +405,6 @@ h1, h2, h3, .brand-font {
     flex-shrink: 0;
 }
 
-/* ─── Footer ─────────────────────────────────────────────────── */
-.site-footer {
-    border-top: 1px solid rgba(197, 197, 211, .25);
-    padding: 2.5rem 0;
-    margin-top: 3rem;
-    font-size: .75rem;
-    color: var(--color-outline);
-}
-
-.site-footer a {
-    color: var(--color-outline);
-    text-decoration: none;
-    transition: color .2s;
-}
-
-.site-footer a:hover { color: var(--color-primary); }
 
 /* ─── Responsive tweaks ──────────────────────────────────────── */
 @media (max-width: 767px) {
